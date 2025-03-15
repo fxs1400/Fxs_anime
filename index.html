@@ -52,7 +52,7 @@
         </aside>
     <script>
        let r = document.getElementById("g");
-       function hi(){
+   r.onclick = function (){
  fetch("https://raw.githubusercontent.com/fxs1400/c/refs/heads/main/c.txt").then(function (response) {
      return response.text()
  }).then(function (data) {
