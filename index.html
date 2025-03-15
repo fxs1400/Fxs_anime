@@ -53,8 +53,13 @@
     <script>
        let r = document.getElementById("g");
        function hi(){
- let x = alert("◀posts▷ \n If you want to publish, contact us. superanimfx@gmail.com \n Youssef : hello is Frist post \n site from fxs1400 \n post is 1 \ncopyright fxs anime ©");
-     
+ fetch("https://raw.githubusercontent.com/fxs1400/Post/refs/heads/main/Post.txt").then(function (response) {
+     return response.text()
+ }).then(function (data) {
+     alert("✰あにめ 役職　anime post✰ \n If you want to publish, contact us. superanimfx@gmail.com \n"+ data +"❖Thank you for visiting us.ご来場ありがとうございました。❖");
+ 
+ })
+        }
        }
     </script>
         <style>
